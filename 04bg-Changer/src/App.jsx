@@ -7,6 +7,15 @@ function App() {
     <div className=" w-full h-screen duration-100"
     style={{backgroundColor:color}}
     >
+      <div className=" flex rounded-3xl  justify-center "
+      style={{backgroundColor:"white"}}
+      >
+      <div className=" text-black text-3xl "
+      style={{color:color}}
+      >
+        This is {color} color
+      </div>
+      </div>
    <div id="btnbar" className=" fixed flex flex-wrap bottom-8 justify-center inset-x-0 px-2">
    
    <div className=" flex flex-wrap justify-center rounded-3xl text-black gap-3 px-3 py-2 bg-white" >
