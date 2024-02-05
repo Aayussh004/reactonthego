@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import InputBox from './Components/InputBox'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
-
+import { useRef } from 'react'
+import { useCallback } from 'react'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
   }
+
 
   return (
     <div
