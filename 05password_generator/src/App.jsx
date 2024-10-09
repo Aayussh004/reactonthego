@@ -1,4 +1,4 @@
-import { useState,useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import './App.css'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
   const passowordref = useRef(null);//here we are taking reference of password kyuki input me humne iska use kiya hai dekho jaake
   
   //usecallback hooks: function  ko memorize krta hai apni cache memory me optimize krne ke liye iska mtlb har jagah usecallback mt kr dena
-  // useEffect hooks: ka kaam sirf ek baar chalna hai declare hone pr aur tb tb chlega jb uski dependency se chedchad hogi jaise ki upr length wagera de rkha hai humne
+  //useEffect hooks: ka kaam sirf ek baar chalna hai declare hone pr aur tb tb chlega jb uski dependency se chedchad hogi jaise ki upr length wagera de rkha hai humne
 
   return (
     <>
@@ -58,7 +58,6 @@ function App() {
         <button
 className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
 onClick={copypassword}
-
         >copy</button>
       
 
