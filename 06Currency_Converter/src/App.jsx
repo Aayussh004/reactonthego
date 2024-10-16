@@ -11,9 +11,9 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const currencyInfo = useCurrencyInfo(from)
+  const currencyInfo = useCurrencyInfo(from)//it is taking the usd key as an object
 
-  const options = Object.keys(currencyInfo)
+  const options = Object.keys(currencyInfo)//it is taking an array of country and pass it to the currencyoptions in inputbox.jsx
 
   const swap = () => {
     setFrom(to)
@@ -26,7 +26,6 @@ function App() {
     setConvertedAmount(amount * currencyInfo[to])
   }
 
-
   return (
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
@@ -35,7 +34,7 @@ function App() {
         }}
     >
         <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+             <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();

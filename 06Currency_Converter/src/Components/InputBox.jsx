@@ -44,7 +44,7 @@ function InputBox({
                             <option key={currency} value={currency} >
                             {currency}
                             </option>
-                        ))}
+                        ))}  
                 
                 </select>
             </div>
@@ -55,7 +55,6 @@ function InputBox({
 export default InputBox;
 
 // import React,{useId} from 'react'
-
 // function InputBox({
 //   label,
 //   amount,
